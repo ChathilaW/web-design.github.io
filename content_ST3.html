@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Planning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo-transparent.png" >
+    
+    <style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .wrapper {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        section {
+            
+            padding: 50px;
+            max-width: 900px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+        .container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 20px; 
+    
+
+}
+
+.image {
+    max-width: 500px;
+    margin-bottom: 80px;
+    height: auto;
+    border-radius: 10px; 
+}
+.imageR{
+    margin-left: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px; 
+}
+.imageP {
+    margin-right: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.imageS {
+    margin-left: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px; 
+}
+.imageT {
+    margin-right: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.imageU {
+    margin-left: 50px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px; 
+}
+
+
+        
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffc107;
+        }
+
+        p, ul {
+            margin: 10px 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        /* Parallax Header */
+        .parallax {
+            height: 630px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            font-size: 32px;
+            font-weight: bold;
+            position: relative;
+        }
+        #backimg1{
+            background: url('images/eve.jpg') no-repeat center center/cover;
+        }
+        #backimg2 {
+            background: url('images/smart.jpg') no-repeat center center/cover;
+            height: 300px;
+        }
+        .title{
+            color: rgb(178, 175, 175)
+        }
+        navi {
+    text-align:center;
+  }
+
+navi a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+navi a:hover {
+    color: #ffc107;
+}
+        
+    </style>
+</head>
+<header class="navigation-bar">
+    <div class="logo-container">
+      <a href="home.html"
+        ><img class="logo" src="images/logo-transparent.png" alt="logo"></a>
+      <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
+    </div>
+    <nav>
+      <ul class="navlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="splash.html">Splash</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="profile.html">User Profile</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a class="active" href="team.html">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<div class="wrapper">
+<h1 class="parallax" id="backimg1"> Smart Planning</h1>
+
+<h2 class="title">Redefining Future Through Smart Planning </h2>
+<navi>
+  <p><a href="#western">Western Province Megapolis Project</a></p>
+  <p><a href="#transport">Smart Driven Transportation</a></p>
+  <p><a href="#clean">Clean Sri Lanka Initiative</a></p>
+  <p><a href="#smart">Smart Sri Lanka Initiative</a></p>
+</navi>
+
+<br>
+
+<div class="container">
+<section id="western">
+<h2>1.Western Province Megapolis Project</h2>
+<p>Launched 2015</p>
+<p>this comprehensive urban development plan aims to transform the Western Province into a megapolis by 2030</p>
+
+<ul>
+<li> Zoning and Development: The project is divided into 11 planning areas, each with specific zoning regulations to optimize land use and economic potential.</li>
+<li> Transportation Infrastructure: Plans encompass modernizing public transit systems, introducing rapid transit solutions, and improving road networks to enhance connectivity and reduce congestion</li>
+<li>Industrial and Technological Zones: Establishment of dedicated zones for industrial and technological advancements to stimulate economic growth and innovation.</li>
+</ul>
+
+</section>
+<img src="images/colombodrone.jpg" alt="ColomboDrone Image" class="image">
+</div>
+
+<br>
+
+<div class="container">
+<img src="images/portcity.jpg" alt="port city" class="imageR">
+<section id="transport">
+<h2>Smart Driven Transportation</h2>
+<p>Port City Colombo</p>
+<p>this comprehensive urban development plan aims to transform the Western Province into a megapolis by 2030</p>
+
+<ul>
+<li> Integrated Transportation: Plans include non-motorized transport systems, such as shaded walkways and cycling paths, alongside a proposed Light Rail Transit (LRT) system to facilitate efficient mobility.</li>
+<li> Modernized Bus Services: Plans to restructure and modernize bus services, including the deployment of smart buses with advanced features, aim to improve public transportation within the region</li>
+<li>Inland Water Transport: The introduction of boat services utilizing Colombo's historic canal network is proposed to enhance east-west connectivity and promote eco-tourism, potentially benefiting areas like Port City Colombo.</li>
+</ul>
+
+</section>
+<img src="images/tesla.jpg" alt="Tesla" class="imageP">
+</div>
+<br>
+
+
+<h1 class="parallax" id="backimg2">Smart Planning Projetcs</h1>
+
+<div class="container">
+<img src="images/cleansrilanka.jpg" alt="cleansrilanka" class="imageS">
+<section id="clean">
+<h2>Clean Sri Lanka Initiative</h2>
+<p>The Clean Sri Lanka Initiative is a comprehensive nationwide program launched by the Sri Lankan government to transform the country into a cleaner, greener, and more sustainable nation. Here are key aspects of the initiative:</p>
+<p>Launched on January 1, 2025, the Clean Sri Lanka initiative aims to tackle pressing environmental issues while promoting socio-economic growth. This initiative aligns with Smart City projects that utilize technology to enhance urban living, addressing challenges such as waste management and traffic congestion through sustainability pillars of governance, economy, environment, and society <a href="https://cleansrilanka.gov.lk/">See more</a>  </p>
+<br>
+</section>
+</div>
+
+<div class="container">
+
+
+<section id="smart">
+<h2>Smart Sri Lanka Initiative</h2>
+<p>The Smart Sri Lanka Initiative is a broad effort to transform Sri Lanka into a digitally empowered nation, focusing on innovation, inclusion, and sustainable growth3. It involves various projects and strategies across different sectors.</p>
+<ul>
+    <li>Lanka Government Network 2.0 (LGN 2.0): Connecting government institutions to a single digital infrastructure with high-speed connectivity and Wi-Fi facilities</li>
+    <li><p>The Lanka Government Network 2.0 (LGN 2.0) is a wide area computer network designed to connect all government organizations in Sri Lanka in a cost-effective and secure manner. It is a dedicated, highly available, secure, and reliable underlying information infrastructure backbone1. The Information and Communication Technology Agency (ICTA) spearheads this initiative <a href="https://icta.lk/projects/digital-government/lanka-government-network-lgn">See more</a></p></li>
+    <li><br></li>
+    <li>eLocal Government Programme (eLG)</li>
+    <li><p>The eLocal Government Programme (eLG) is a Sri Lankan initiative designed to enhance the efficiency and effectiveness of local governance through the use of ICT. The project aims to make local government services more citizen-friendly by streamlining internal processes and improving social accountability and transparency.<a href="https://hsenidbiz.com/blog/101-elocal-government-project-for-better-local-governance">See more</a></p></li>
+    <li>Smart Grid</li>
+    <li><p>Smart Metering and Network Monitoring: Lanka Electricity Company (LECO), in partnership with Dialog Axiata and the University of Moratuwa, has implemented a smart grid solution. This system collects data from 3,200 smart meters and 150 network monitoring devices to analyze electricity usage and detect grid faults. The smart meters also support prepaid electricity metering <a href="https://www.gsma.com/solutions-and-impact/technologies/internet-of-things/gsma_study/case-study-sri-lanka-takes-first-step-towards-smart-grid/">See more</a></p></li>
+</ul>
+</section>
+<img src="images/intit.jpg" alt="LECO" class="imageU">
+</div>
+<footer>
+    <a href="#top" class="backtotop">Back to Top</a>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3 class="footerlogo">
+          <img class="logo" src="images/logo-transparent.png" alt="logo">SUSTAINIFY
+        </h3>
+        <p>
+          SUSTAINIFY promotes sustainable urban development through
+          renewable energy, green infrastructure, and smart planning to
+          create cleaner, healthier, and more resilient communities.
+        </p>
+      </div>
+
+      <div class="footer-section links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="table.html">Initiatives</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section editors">
+        <h4>Editors</h4>
+        <ul>
+          <li><a href="pageEditor_ST3.html">Akila</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo-transparent.png" />
+    <style>
+      .wrapper {
+        margin: 30px auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        text-align: center;
+      }
+      /* Table styling */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+      }
+
+      /* Heading font size */
+      th {
+        text-align: center;
+        font-size: 18px;
+        border: 3px solid #ddd;
+        padding: 12px;
+        background-color: #ffd700;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      td {
+        text-align: center;
+        font-size: 16px;
+        border: 3px solid #ddd;
+        padding: 12px;
+      }
+
+      @media (max-width: 768px) {
+        /* Hide columns on mobile */
+        table th:nth-child(3),  /* Hide the third column header (Focus) */
+        table td:nth-child(3),  /* Hide the third column data (Focus) */
+        table th:nth-child(4),  /* Hide the fourth column header (Impact) */
+        table td:nth-child(4)   /* Hide the fourth column data (Impact) */ {
+          display: none;
+        }
+
+        /* Adjust the table*/
+        table {
+          font-size: 14px;
+        }
+
+        /*table padding on mobile */
+        th,
+        td {
+          padding: 8px;
+        }
+        .table-container {
+          overflow-x: auto;
+        }
+      }
+
+      tr:nth-child(even) {
+        background-color: rgba(
+          255,
+          255,
+          0,
+          0.1
+        ); /* Pale Yellow for alternating rows */
+      }
+
+      tr:hover {
+        background-color: #ffee8c; /* Pale yellow hover effect */
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="home.html"
+          ><img class="logo" src="images/logo-transparent.png" alt="logo"
+        /></a>
+        <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
+      </div>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a class="active" href="table.html">Table</a></li>
+          <li><a href="profile.html">User Profile</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <main>
+        <h2>Sustainable Cities Initiatives</h2>
+        <p>
+          These projects contribute to building more sustainable urban
+          environments:
+        </p>
+
+        <table>
+          <tr>
+            <th>City</th>
+            <th>Sustainable Initiative</th>
+            <th>Focus</th>
+            <th>Impact</th>
+          </tr>
+          <tr>
+            <td>Copenhagen, Denmark</td>
+            <td>Carbon-neutral by 2025</td>
+            <td>Renewable Energy</td>
+            <td>75% of energy from wind</td>
+          </tr>
+          <tr>
+            <td>Singapore</td>
+            <td>Smart Urban Planning</td>
+            <td>Green Infrastructure</td>
+            <td>47% green coverage</td>
+          </tr>
+          <tr>
+            <td>Amsterdam, Netherlands</td>
+            <td>Circular Economy</td>
+            <td>Waste Management</td>
+            <td>68% waste recycled</td>
+          </tr>
+          <tr>
+            <td>Oslo, Norway</td>
+            <td>Electric Public Transport</td>
+            <td>Clean Transport</td>
+            <td>95% of public transport is electric</td>
+          </tr>
+          <tr>
+            <td>Curitiba, Brazil</td>
+            <td>BRT (Bus Rapid Transit) System</td>
+            <td>Public Transport</td>
+            <td>Reduced emissions by 30%</td>
+          </tr>
+          <tr>
+            <td>San Francisco, USA</td>
+            <td>Zero Waste Goal</td>
+            <td>Waste Management</td>
+            <td>Diverts 80% of waste from landfills</td>
+          </tr>
+          <tr>
+            <td>Stockholm, Sweden</td>
+            <td>Green Roofs Policy</td>
+            <td>Urban Greenery</td>
+            <td>40% decrease in stormwater runoff</td>
+          </tr>
+          <tr>
+            <td>Tokyo, Japan</td>
+            <td>Solar Panel Incentives</td>
+            <td>Renewable Energy</td>
+            <td>20% solar-powered homes</td>
+          </tr>
+        </table>
+      </main>
+    </div>
+    <p class="top">
+      <a href="#top">Go to top</a>
+    </p>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3 class="footerlogo">
+            <img
+              class="logo"
+              src="images/logo-transparent.png"
+              alt="logo"
+            />SUSTAINIFY
+          </h3>
+          <p>
+            SUSTAINIFY promotes sustainable urban development through renewable
+            energy, green infrastructure, and smart planning to create cleaner,
+            healthier, and more resilient communities.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="splash.html">Splash</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section editors">
+          <h4>Editor</h4>
+          <ul>
+            <li><a href="pageEditor_ST2.html">Chameen</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

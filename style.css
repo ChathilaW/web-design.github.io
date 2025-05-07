@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  font-family: "Open Sans", serif;
+}
+body {
+  background-color: #fff8f0;
+}
+
+header li,
+header a {
+  color: #fdd003;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3%;
+  background-color: #3c3c3c;
+  flex-wrap: wrap;
+}
+
+header a .navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+  color: #ffffff;
+}
+
+.navlinks li a.active {
+  color: #ff9800;
+}
+
+.navlinks li a:hover {
+  color: #fdd003;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.brand-name {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #3c3c3c; /* Dark charcoal gray for contrast */
+  color: #ffffff; /* White text for readability */
+  text-align: center;
+}
+
+.top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.top a:hover {
+  background-color: #ff8f00;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.top a {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #fdd003;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+  color: #fdd003;
+}
+
+.footer-bottom {
+  background-color: #282828; /* Slightly darker gray for separation */
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footerlogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.footerlogo img {
+  height: 40px;
+  width: auto;
+}

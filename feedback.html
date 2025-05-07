@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo-transparent.png" >
+    <style>
+      /* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+
+/* Background Video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    max-width: 500px;
+    width: 100%;
+    margin: 10px 0; 
+}
+
+/* Form Heading */
+h1 {
+    text-align: center;
+    color: #FFD700;
+    font-weight: 600;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #FF8C00;
+    box-shadow: 0px 0px 8px rgba(255, 140, 0, 0.5);
+}
+
+/* Labels and legends */
+fieldset {
+    border: none;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Radio Buttons */
+label {
+    display: block;
+    font-size: 16px;
+    color: #444;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+input[type="radio"] {
+    transform: scale(1.1);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #FFD700, #FF8C00);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+/* Button Hover */
+button:hover {
+    background: linear-gradient(90deg, #FF8C00, #FFD700);
+    box-shadow: 0px 5px 15px rgba(255, 140, 0, 0.4);
+    transform: scale(1.05);
+}
+input:invalid, select:invalid {
+      border: 2px solid #ff4136;
+      background-color: #fff0f0;
+}
+.required::after {
+      content: " *";
+      color: #ff4136;
+}
+.error{
+  color:red;
+  font-size:0.85em;
+  margin-bottom:5px;
+  display: none;
+  
+}
+input:invalid +.error{
+  display: block;
+}
+input:valid + .error{
+  display: none;
+}
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header class="navigation-bar">
+      <div class="logo-container">
+        <a href="home.html"><img class="logo" src="images/logo-transparent.png" alt="logo" ></a>
+        <p class="brand-name"><a href="home.html">SUSTAINIFY</a></p>
+      </div>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="profile.html">User Profile</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a class="active" href="feedback.html">Feedback</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+  <div class="wrapper">
+    <form action="#" method="post">
+    <!-- Background Video -->
+    <video autoplay muted id="bg-video">
+      <source src="videos/video.mp4" >
+    </video>
+
+    <div class="container">
+     
+        <h1>Give Your Feedback</h1>
+      <fieldset>
+      <legend><h2>Personal Details</h2></legend>
+      </fieldset>
+        <!-- Name Input -->
+        <div class="input-group">
+          <label for="fullname">Enter your Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            class="req"
+            name="FullName"
+            placeholder="Your Name"
+            required title="Enter your name"
+          >
+        <div class="error">This field is required.</div>
+        </div>
+        
+        <div class="input-group">
+          <label for="number">Enter your mobile number:</label>
+          <input
+            type="tel"
+            id="number"
+            name="number"
+            placeholder="Enter your mobile number"
+            pattern="[0-9]{10}"
+            required title="Enter 10 digits mobile number"
+          >
+        <div class="error">Please enter a valid Mobile number.</div>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Enter your Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your E-mail"
+            required title="Enter a valid E-mail address"
+          >
+        <div class="error">Please enter a valid Email address.</div>
+        </div>
+        <fieldset>
+        <legend><h2>Feedback Details</h2></legend>
+        </fieldset>
+        <!-- First-time Visit -->
+        <fieldset>
+          <legend>Was this your first time visiting?</legend>
+          <label>
+            <input type="radio" name="first-visit" value="yes" checked > Yes</label
+          >
+          <label>
+            <input type="radio" name="first-visit" value="no" > No</label
+          >
+        </fieldset>
+
+        <!-- Website Experience -->
+        <fieldset>
+          <legend>Was this website informative and easy to navigate?</legend>
+          <label>
+            <input type="radio" name="navigation" value="yes" checked > Yes</label
+          >
+          <label> <input type="radio" name="navigation" value="no" > No</label>
+        </fieldset>
+
+        <!-- Improvement Suggestions -->
+        <fieldset>
+          <legend>If "No", suggest any improvements for the future:</legend>
+          <textarea
+            id="textArea1"
+            cols="50"
+            rows="4"
+            placeholder="Enter your opinions here..."
+            maxlength="500"
+          ></textarea>
+          <p>Word Count: <span id="wordCount1">0</span></p>
+        </fieldset>
+
+        <!-- Subscription Preferences -->
+        <fieldset>
+          <legend>
+            Would you like to receive updates about the website and offers?
+          </legend>
+          <label for="updates-method">Choose a method:</label>
+          <select id="updates-method" name="subscription-method">
+            <option value="email">Email</option>
+            <option value="phone">Mobile Number</option>
+            <option value="sms">SMS</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Leave us Feedback </legend>
+          <input type="radio" name="feedback" value="excellent" >😍Excellent
+          <br>
+          <input type="radio" name="feedback" value="good" >😊 Good
+          <br>
+          <input type="radio" name="feedback" value="average" >😒 Average
+          <br>
+          <input type="radio" name="feedback" value="poor" >😡 Poor
+        </fieldset>
+
+        <!-- Additional Questions -->
+        <fieldset>
+          <legend>Do you have any additional questions or requests?</legend>
+          <textarea
+            id="textArea2"
+            cols="50"
+            rows="4"
+            placeholder="Add your thoughts here..."
+            maxlength="500"
+           
+          ></textarea>
+          <p>Word Count: <span id="wordCount2">0</span></p>
+        </fieldset>
+        <fieldset>
+          <legend>Add Images/Donument/videos:</legend>
+          <input type="file" id="fileinput" name="fileinput">
+        </fieldset>
+        <fieldset>
+          <legend>Feedback Submission</legend>
+          <input type="datetime-local" name="date" value="2025-03-05T12:00" required >
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" name="terms" value="agree" required > I agree to the
+          terms and conditions
+        </fieldset>
+        <script>
+          function updateWordCount(textAreaId, wordCountId) {
+        const textArea = document.getElementById(textAreaId);
+        const wordCount = document.getElementById(wordCountId);
+
+        textArea.addEventListener("input", () => {
+            let words = textArea.value.trim().split(/\s+/).filter(word => word.length > 0);
+            wordCount.textContent = words.length;
+        });
+    }
+
+    updateWordCount("textArea1", "wordCount1");
+    updateWordCount("textArea2", "wordCount2");
+         
+      </script>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit-btn">Send</button>
+        <button type="reset" id="reset-btn">Reset</button>
+    </div>
+      </form>
+  </div>
+  <p class="top">
+    <a href="#top">Go to top</a>
+  </p>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3 class="footerlogo">
+          <img class="logo" src="images/logo-transparent.png" alt="logo" >SUSTAINIFY
+        </h3>
+        <p>
+          SUSTAINIFY promotes sustainable urban development through renewable
+          energy, green infrastructure, and smart planning to create cleaner,
+          healthier, and more resilient communities.
+        </p>
+      </div>
+
+      <div class="footer-section links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="table.html">Initiatives</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section editors">
+        <h4>Editors</h4>
+        <ul>
+          <li><a href="pageEditor_ST3.html">Akila</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2025 SUSTAINIFY. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </body>
+</html>
